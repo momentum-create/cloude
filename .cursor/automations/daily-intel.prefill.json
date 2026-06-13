@@ -1,0 +1,22 @@
+{
+  "name": "Cloude daily_intel",
+  "description": "日次 Web advisory 収集 + npm audit 影響判定（パッチなし）。Critical/High はレポートに記載のみ。",
+  "workflow": {
+    "triggers": [
+      {
+        "cron": {
+          "cron": "0 9 * * 1-5"
+        }
+      }
+    ],
+    "actions": [],
+    "prompts": [
+      "daily_intel パイプラインを実行してください。\n\n## 1. vuln-intel-scout\n- vuln-intel-feeds スキルを読み、WebSearch / WebFetch で最新 advisory を収集\n- docs/security/intel_report.md を更新\n- 調査日時（ISO 8601）と参照 URL を必ず記載\n- CVE 番号・修正版はスキルや記憶に頼らず、実行時の Web 情報のみ使用\n\n## 2. vuln-impact-analyst\n- web-vuln-triage スキルを読み、intel_report を入力に影響判定\n- 各サブプロジェクトで npm audit を実行\n- docs/security/impact_assessment.md を更新\n\n## 監視対象\nSkiresortWebPlan, SPRAY, JAPOWSERCH, primecarwash-site, WebTest, POWDER\n\n## 制約\n- daily_intel のみ（パッチ適用禁止）\n- vuln-patch-implementer は起動しない（「実装して」がない限り）\n- コード・lockfile・CI の変更禁止\n\n## エスカレーション\nimpact_assessment で Critical または High かつ AFFECTED があれば、\nレポート末尾に「incident パイプライン推奨」と明記する。\n自動で incident / パッチ適用は行わない。"
+    ],
+    "model": "",
+    "agentOptions": {
+      "skipInstall": false
+    },
+    "memoryEnabled": true
+  }
+}

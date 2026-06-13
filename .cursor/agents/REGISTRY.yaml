@@ -1,0 +1,69 @@
+﻿# Web vulnerability response fleet — Cloude/.cursor/agents/
+# Sync with AGENTS.md when updating.
+
+version: 1
+fleet: web-vuln-response
+stack: [nextjs, node, vercel, docker, ci]
+web_required: true
+
+pipelines:
+  daily_intel:
+    description: Collect latest advisories; assess impact only (no patching)
+    - vuln-intel-scout
+    - vuln-impact-analyst
+
+  incident:
+    description: CVE / urgent advisory response
+    - vuln-intel-scout
+    - vuln-impact-analyst
+    - vuln-remediation-planner
+    - vuln-patch-implementer
+    - vuln-verify-auditor
+
+  pr_dependency_gate:
+    description: Gate for lockfile / package.json changes
+    - vuln-impact-analyst
+    - vuln-verify-auditor
+
+  post_patch:
+    description: Re-audit after patch
+    - vuln-verify-auditor
+
+agents:
+  - name: vuln-intel-scout
+    layer: L0
+    file: .cursor/agents/vuln-intel-scout.md
+    output: docs/security/intel_report.md
+    code: false
+    web: true
+    skill: vuln-intel-feeds
+
+  - name: vuln-impact-analyst
+    layer: L1
+    file: .cursor/agents/vuln-impact-analyst.md
+    output: docs/security/impact_assessment.md
+    code: false
+    requires: [vuln-intel-scout]
+    skill: web-vuln-triage
+
+  - name: vuln-remediation-planner
+    layer: L1
+    file: .cursor/agents/vuln-remediation-planner.md
+    output: docs/security/remediation_plan.md
+    code: false
+    requires: [vuln-impact-analyst]
+    skill: web-vuln-remediation
+
+  - name: vuln-patch-implementer
+    layer: L2
+    file: .cursor/agents/vuln-patch-implementer.md
+    code: true
+    requires: [vuln-remediation-planner]
+
+  - name: vuln-verify-auditor
+    layer: L3
+    file: .cursor/agents/vuln-verify-auditor.md
+    output: docs/security/verify_report.md
+    code: false
+    requires: [vuln-patch-implementer]
+    rubric: V1-V5

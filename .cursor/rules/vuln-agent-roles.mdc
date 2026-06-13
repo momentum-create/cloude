@@ -1,0 +1,46 @@
+---
+description: 脆弱性対応チームのロール分界 — implementer のみ本番・lockfile を変更
+alwaysApply: false
+globs: docs/security/**/*
+---
+
+# 脆弱性対応エージェントの分界
+
+**一行:** `vuln-intel-scout` / `vuln-impact-analyst` / `vuln-remediation-planner` / `vuln-verify-auditor` は調査・計画・検証のみ。`package.json`・lockfile・本番 TS/JS・CI・Docker・Vercel 設定の変更は **`vuln-patch-implementer` + `実装して`** のみ。
+
+## ロール表
+
+| ロール | 出力 | コード変更 |
+|--------|------|-----------|
+| vuln-intel-scout | `docs/security/intel_report.md` | 不可 |
+| vuln-impact-analyst | `docs/security/impact_assessment.md` | 不可 |
+| vuln-remediation-planner | `docs/security/remediation_plan.md` | 不可 |
+| vuln-patch-implementer | PR / コミット | **可**（計画書必須） |
+| vuln-verify-auditor | `docs/security/verify_report.md` | 不可 |
+
+## Web 情報の扱い
+
+- CVE 詳細・修正版・回避策は **スキルに書かず**、実行時に WebSearch / WebFetch で取得する
+- intel レポートには **調査日時・参照 URL** を必ず残す
+- 二次情報のみでパッチ判断しない（公式 advisory / GHSA / vendor を優先）
+
+## 深刻度とエスカレーション
+
+| 深刻度 | パイプライン |
+|--------|-------------|
+| Critical / High（本番到達） | `incident` フル実行 |
+| Medium（間接依存） | planner まで、implementer はユーザー承認後 |
+| Low / 情報のみ | `daily_intel` で記録、次サイクル |
+
+## verify 報告形式
+
+```text
+[VERIFY REPORT]
+対象: <プロジェクト / CVE>
+V1 依存監査: PASS | FAIL
+V2 修正版適用: PASS | FAIL
+V3 ビルド・テスト: PASS | FAIL
+V4 設定・シークレット: PASS | FAIL
+V5 回帰なし: PASS | FAIL
+総合: SHIP | BLOCK
+```
