@@ -1,0 +1,30 @@
+---
+description: Config files must be UTF-8 without BOM — never PowerShell default UTF-16
+alwaysApply: true
+---
+
+# Config file encoding (UTF-8)
+
+## Applies to
+
+- vercel.json
+- .github/**/*.yml / .github/**/*.yaml
+
+## Required
+
+UTF-8 without BOM. UTF-16 breaks Vercel (Invalid vercel.json) and GitHub YAML parsing.
+
+## Forbidden on Windows
+
+- PowerShell > / >> redirection
+- Out-File / Set-Content without UTF-8 no BOM
+
+## Safe writes
+
+- Cursor / VS Code Save with Encoding UTF-8
+- Node fs.writeFileSync(path, content, "utf8")
+- PowerShell: [System.IO.File]::WriteAllText with UTF8Encoding false
+
+## CI
+
+.github/scripts/check-config-encoding.mjs runs in security-audit workflow.

@@ -1,0 +1,46 @@
+﻿---
+description: Use npm ci for installs - never npm install in CI/build/default setup
+alwaysApply: true
+---
+
+# Dependency install policy (Cloude)
+
+**Default:** `npm ci` - installs exactly what package-lock.json specifies.
+
+**Do not use npm install for:**
+- CI / GitHub Actions
+- Vercel / production build (installCommand)
+- Docker image builds
+- Routine local setup after clone or pull
+
+**Use npm install only when intentionally changing dependencies:**
+- `npm install <package>` to add or bump
+- Then commit package.json and package-lock.json
+
+## pnpm workspaces (e.g. SPRAY)
+
+- Default: `pnpm install --frozen-lockfile`
+- Vercel/npm sub-apps: `npm ci` when package-lock.json is the lock source
+
+## Why
+
+`npm install` may resolve new versions or unexpected packages. `npm ci` fails if lockfile is out of sync.
+
+## Single lockfile per package manager (P2)
+
+**pnpm workspace (SPRAY):**
+
+- Source of truth: `pnpm-lock.yaml` at repo root only
+- Do **not** add `package-lock.json` under `apps/*` or other workspace packages
+- CI fails if `apps/web/package-lock.json` exists
+
+**npm projects:**
+
+- One `package-lock.json` per deploy unit (monorepo sub-app = own lock in that directory)
+- Dependabot must update the lock in the **same directory** as the bumped `package.json`
+
+## Dependabot major updates
+
+- **Do not auto-merge** semver-major Dependabot PRs
+- `dependabot.yml` uses `ignore: update-types: [version-update:semver-major]` for framework deps
+- Major bumps (Next, React, TypeScript, etc.) require explicit owner review + build/audit
