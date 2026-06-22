@@ -1,31 +1,98 @@
-# Intel Report - 2026-06-13
+# Intel Report - 2026-06-22
 
 ## 調査日時
-2026-06-13T12:00:00+09:00
+2026-06-22T09:03:39+00:00
 
 ## 情報源
 | 名称 | URL | 取得時刻 |
 |------|-----|----------|
-| Vercel - Next.js May 2026 security release | https://vercel.com/changelog/next-js-may-2026-security-release | 2026-06-13 |
-| GitHub Advisory - GHSA-8h8q-6873-q5fj | https://github.com/vercel/next.js/security/advisories/GHSA-8h8q-6873-q5fj | 2026-06-13 |
-| Next.js v16.2.6 release | https://github.com/vercel/next.js/releases/tag/v16.2.6 | 2026-06-13 |
-| Node.js June 2026 pre-alert | https://nodejs.org/en/blog/vulnerability/june-2026-security-releases | 2026-06-13 |
+| Vercel - Next.js May 2026 security release | https://vercel.com/changelog/next-js-may-2026-security-release | 2026-06-22T09:03:39+00:00 |
+| Node.js - Thursday, June 18, 2026 Security Releases | https://nodejs.org/en/blog/vulnerability/june-2026-security-releases | 2026-06-22T09:03:39+00:00 |
+| Node.js release v22.23.0 | https://github.com/nodejs/node/releases/tag/v22.23.0 | 2026-06-22T09:03:39+00:00 |
+| Node.js release v24.17.0 | https://github.com/nodejs/node/releases/tag/v24.17.0 | 2026-06-22T09:03:39+00:00 |
+| Node.js release v26.3.1 | https://github.com/nodejs/node/releases/tag/v26.3.1 | 2026-06-22T09:03:39+00:00 |
+| GitHub Advisory Database - npm ecosystem listing | https://github.com/advisories?query=ecosystem:npm | 2026-06-22T09:03:39+00:00 |
+| React GHSA-rv78-f8rc-xrxh raw advisory record | https://raw.githubusercontent.com/github/advisory-database/main/advisories/github-reviewed/2026/05/GHSA-rv78-f8rc-xrxh/GHSA-rv78-f8rc-xrxh.json | 2026-06-22T09:03:39+00:00 |
+| Next.js GHSA-8h8q-6873-q5fj raw advisory record | https://raw.githubusercontent.com/github/advisory-database/main/advisories/github-reviewed/2026/05/GHSA-8h8q-6873-q5fj/GHSA-8h8q-6873-q5fj.json | 2026-06-22T09:03:39+00:00 |
+| Next.js GHSA-267c-6grr-h53f raw advisory record | https://raw.githubusercontent.com/github/advisory-database/main/advisories/github-reviewed/2026/05/GHSA-267c-6grr-h53f/GHSA-267c-6grr-h53f.json | 2026-06-22T09:03:39+00:00 |
+| Next.js GHSA-26hh-7cqf-hhc6 raw advisory record | https://raw.githubusercontent.com/github/advisory-database/main/advisories/github-reviewed/2026/05/GHSA-26hh-7cqf-hhc6/GHSA-26hh-7cqf-hhc6.json | 2026-06-22T09:03:39+00:00 |
+| Next.js GHSA-mg66-mrh9-m8jx raw advisory record | https://raw.githubusercontent.com/github/advisory-database/main/advisories/github-reviewed/2026/05/GHSA-mg66-mrh9-m8jx/GHSA-mg66-mrh9-m8jx.json | 2026-06-22T09:03:39+00:00 |
+| Next.js GHSA-492v-c6pp-mqqv raw advisory record | https://raw.githubusercontent.com/github/advisory-database/main/advisories/github-reviewed/2026/05/GHSA-492v-c6pp-mqqv/GHSA-492v-c6pp-mqqv.json | 2026-06-22T09:03:39+00:00 |
+| Next.js GHSA-c4j6-fc7j-m34r raw advisory record | https://raw.githubusercontent.com/github/advisory-database/main/advisories/github-reviewed/2026/05/GHSA-c4j6-fc7j-m34r/GHSA-c4j6-fc7j-m34r.json | 2026-06-22T09:03:39+00:00 |
+| Next.js GHSA-36qx-fr4f-26g5 raw advisory record | https://raw.githubusercontent.com/github/advisory-database/main/advisories/github-reviewed/2026/05/GHSA-36qx-fr4f-26g5/GHSA-36qx-fr4f-26g5.json | 2026-06-22T09:03:39+00:00 |
+| Next.js GHSA-ffhc-5mcf-pf4q raw advisory record | https://raw.githubusercontent.com/github/advisory-database/main/advisories/github-reviewed/2026/05/GHSA-ffhc-5mcf-pf4q/GHSA-ffhc-5mcf-pf4q.json | 2026-06-22T09:03:39+00:00 |
+| Next.js GHSA-gx5p-jg67-6x7h raw advisory record | https://raw.githubusercontent.com/github/advisory-database/main/advisories/github-reviewed/2026/05/GHSA-gx5p-jg67-6x7h/GHSA-gx5p-jg67-6x7h.json | 2026-06-22T09:03:39+00:00 |
+| Next.js GHSA-h64f-5h5j-jqjh raw advisory record | https://raw.githubusercontent.com/github/advisory-database/main/advisories/github-reviewed/2026/05/GHSA-h64f-5h5j-jqjh/GHSA-h64f-5h5j-jqjh.json | 2026-06-22T09:03:39+00:00 |
+| Next.js GHSA-wfc6-r584-vfw7 raw advisory record | https://raw.githubusercontent.com/github/advisory-database/main/advisories/github-reviewed/2026/05/GHSA-wfc6-r584-vfw7/GHSA-wfc6-r584-vfw7.json | 2026-06-22T09:03:39+00:00 |
+| Next.js GHSA-vfv6-92ff-j949 raw advisory record | https://raw.githubusercontent.com/github/advisory-database/main/advisories/github-reviewed/2026/05/GHSA-vfv6-92ff-j949/GHSA-vfv6-92ff-j949.json | 2026-06-22T09:03:39+00:00 |
+| Next.js GHSA-3g8h-86w9-wvmq raw advisory record | https://raw.githubusercontent.com/github/advisory-database/main/advisories/github-reviewed/2026/05/GHSA-3g8h-86w9-wvmq/GHSA-3g8h-86w9-wvmq.json | 2026-06-22T09:03:39+00:00 |
+| React Router GHSA-8646-j5j9-6r62 raw advisory record | https://raw.githubusercontent.com/github/advisory-database/main/advisories/github-reviewed/2026/06/GHSA-8646-j5j9-6r62/GHSA-8646-j5j9-6r62.json | 2026-06-22T09:03:39+00:00 |
+| React Router GHSA-8x6r-g9mw-2r78 raw advisory record | https://raw.githubusercontent.com/github/advisory-database/main/advisories/github-reviewed/2026/06/GHSA-8x6r-g9mw-2r78/GHSA-8x6r-g9mw-2r78.json | 2026-06-22T09:03:39+00:00 |
+| undici GHSA-hm92-r4w5-c3mj raw advisory record | https://raw.githubusercontent.com/github/advisory-database/main/advisories/github-reviewed/2026/06/GHSA-hm92-r4w5-c3mj/GHSA-hm92-r4w5-c3mj.json | 2026-06-22T09:03:39+00:00 |
+| multer GHSA-72gw-mp4g-v24j raw advisory record | https://raw.githubusercontent.com/github/advisory-database/main/advisories/github-reviewed/2026/06/GHSA-72gw-mp4g-v24j/GHSA-72gw-mp4g-v24j.json | 2026-06-22T09:03:39+00:00 |
+| CycloneDX npm GHSA-v75r-vx73-82pj raw advisory record | https://raw.githubusercontent.com/github/advisory-database/main/advisories/github-reviewed/2026/06/GHSA-v75r-vx73-82pj/GHSA-v75r-vx73-82pj.json | 2026-06-22T09:03:39+00:00 |
+| TinaCMS GHSA-2vcc-5v34-9jc8 raw advisory record | https://raw.githubusercontent.com/github/advisory-database/main/advisories/github-reviewed/2026/06/GHSA-2vcc-5v34-9jc8/GHSA-2vcc-5v34-9jc8.json | 2026-06-22T09:03:39+00:00 |
+| TinaCMS hardening PR #7056 | https://github.com/tinacms/tinacms/pull/7056 | 2026-06-22T09:03:39+00:00 |
+| TinaCMS version-package commit for PR #7056 | https://github.com/tinacms/tinacms/commit/b6f613b1e3e093b47b8d5ebb732d4bb8dcdcccfd | 2026-06-22T09:03:39+00:00 |
+| GitLab Advisory Database - TinaCMS listing details | https://advisories.gitlab.com/advisories/ | 2026-06-22T09:03:39+00:00 |
+| npm malware advisory - assert-kit | https://github.com/advisories/GHSA-748x-3gxw-v7xv | 2026-06-22T09:03:39+00:00 |
+| ws GHSA-96hv-2xvq-fx4p | https://github.com/websockets/ws/security/advisories/GHSA-96hv-2xvq-fx4p | 2026-06-22T09:03:39+00:00 |
+| Vercel Sandbox release sandbox@3.2.2 | https://github.com/vercel/sandbox/releases/tag/sandbox%403.2.2 | 2026-06-22T09:03:39+00:00 |
+| Vercel AI SSRF hardening commit | https://github.com/vercel/ai/commit/375fdd7eea4323454be663850202185c0df39d98 | 2026-06-22T09:03:39+00:00 |
+| Vercel AI credential-origin hardening commit | https://github.com/vercel/ai/commit/aeda37394a7250a1a0061bb83f658f482d7ea0db | 2026-06-22T09:03:39+00:00 |
 
 ## 新規 / 更新 advisory
-| ID | 概要 | 影響パッケージ | ベンダー深刻度 |
-|----|------|----------------|----------------|
-| CVE-2026-23870 | RSC Flight DoS | react-server-dom-* <=19.2.5 | High |
-| GHSA-8h8q-6873-q5fj | Next.js RSC DoS | next <16.2.6 (16.x) | High |
-| GHSA-26hh-7cqf-hhc6 | Middleware bypass | next <16.2.6 | High |
-| May 2026 fix | Upgrade targets | next 16.2.6 / 15.5.18 | - |
-| GHSA-qx2v-qp2m-jg93 | PostCSS XSS | postcss <8.5.10 | Moderate |
-| Node.js June 2026 | Pre-alert ~6/17 | Node 22/24/26 | High |
+| ID | 概要 | 影響パッケージ / 範囲 | 修正版 / 対応版 | ベンダー深刻度 | 参照 |
+|----|------|------------------------|------------------|----------------|------|
+| Next.js May 2026 coordinated release | Vercel cumulative release for 13 Next.js / React Server Components advisories: DoS, middleware/proxy bypass, SSRF, cache poisoning, XSS. Vercel states patching is the only complete mitigation and no WAF rules were deployed for this release. | `next` 13.x/14.x all, 15.x `<=15.5.17`, 16.x `<=16.2.5`; `react-server-dom-*` 19.0.x `<=19.0.5`, 19.1.x `<=19.1.6`, 19.2.x `<=19.2.5` | `next` 15.5.18 or 16.2.6; `react-server-dom-*` 19.0.6 / 19.1.7 / 19.2.6 | High aggregate (7 High, 4 Moderate, 2 Low in component advisories) | https://vercel.com/changelog/next-js-may-2026-security-release |
+| GHSA-rv78-f8rc-xrxh / CVE-2026-23870 | React Server Components DoS via crafted server function requests causing OOM or CPU exhaustion. | `react-server-dom-parcel`, `react-server-dom-turbopack`, `react-server-dom-webpack` ranges `>=19.0.0 <19.0.6`, `>=19.1.0 <19.1.7`, `>=19.2.0 <19.2.6` | 19.0.6 / 19.1.7 / 19.2.6 | High | https://github.com/facebook/react/security/advisories/GHSA-rv78-f8rc-xrxh |
+| GHSA-8h8q-6873-q5fj / upstream CVE-2026-23870 | Next.js App Router Server Components DoS from the upstream React RSC issue. | `next >=13.0.0 <15.5.16`, `>=16.0.0 <16.2.5` | Initial fixed 15.5.16 / 16.2.5; Vercel cumulative target 15.5.18 / 16.2.6 | High | https://github.com/vercel/next.js/security/advisories/GHSA-8h8q-6873-q5fj |
+| GHSA-267c-6grr-h53f / CVE-2026-44575 | Middleware / Proxy bypass in App Router segment-prefetch routes. | `next >=15.2.0 <15.5.16`, `>=16.0.0 <16.2.5` | 15.5.16 / 16.2.5; cumulative target 15.5.18 / 16.2.6 | High | https://github.com/vercel/next.js/security/advisories/GHSA-267c-6grr-h53f |
+| GHSA-26hh-7cqf-hhc6 / CVE-2026-45109 | Incomplete-fix follow-up: CVE-2026-44575 fix did not apply to `middleware.ts` with Turbopack. | `next >=15.2.0 <15.5.18`, `>=16.0.0 <16.2.6` | 15.5.18 / 16.2.6 | High | https://github.com/vercel/next.js/security/advisories/GHSA-26hh-7cqf-hhc6 |
+| GHSA-mg66-mrh9-m8jx / CVE-2026-44579 | DoS via connection exhaustion in applications using Cache Components / Partial Prerendering. | `next >=15.0.0 <15.5.16`, `>=16.0.0 <16.2.5` | 15.5.16 / 16.2.5; cumulative target 15.5.18 / 16.2.6 | High | https://github.com/vercel/next.js/security/advisories/GHSA-mg66-mrh9-m8jx |
+| GHSA-492v-c6pp-mqqv / CVE-2026-44574 | Middleware / Proxy authorization bypass through dynamic route parameter injection. | `next >=15.4.0 <15.5.16`, `>=16.0.0 <16.2.5` | 15.5.16 / 16.2.5; cumulative target 15.5.18 / 16.2.6 | High | https://github.com/vercel/next.js/security/advisories/GHSA-492v-c6pp-mqqv |
+| GHSA-c4j6-fc7j-m34r / CVE-2026-44578 | SSRF in self-hosted Next.js applications using built-in Node.js server and WebSocket upgrades. Vercel-hosted deployments are not affected per advisory. | `next >=13.4.13 <15.5.16`, `>=16.0.0 <16.2.5` | 15.5.16 / 16.2.5; cumulative target 15.5.18 / 16.2.6 | High | https://github.com/vercel/next.js/security/advisories/GHSA-c4j6-fc7j-m34r |
+| GHSA-36qx-fr4f-26g5 / CVE-2026-44573 | Pages Router i18n middleware/proxy bypass exposing protected SSR JSON via locale-less data routes. | `next >=12.2.0 <15.5.16`, `>=16.0.0 <16.2.5` | 15.5.16 / 16.2.5; cumulative target 15.5.18 / 16.2.6 | High | https://github.com/vercel/next.js/security/advisories/GHSA-36qx-fr4f-26g5 |
+| GHSA-ffhc-5mcf-pf4q / CVE-2026-44581 | Stored XSS in App Router applications using CSP nonces behind shared caches. | `next >=13.4.0 <15.5.16`, `>=16.0.0 <16.2.5` | 15.5.16 / 16.2.5; cumulative target 15.5.18 / 16.2.6 | Moderate | https://github.com/vercel/next.js/security/advisories/GHSA-ffhc-5mcf-pf4q |
+| GHSA-gx5p-jg67-6x7h / CVE-2026-44580 | XSS when `beforeInteractive` scripts embed untrusted input. | `next >=13.0.0 <15.5.16`, `>=16.0.0 <16.2.5` | 15.5.16 / 16.2.5; cumulative target 15.5.18 / 16.2.6 | Moderate | https://github.com/vercel/next.js/security/advisories/GHSA-gx5p-jg67-6x7h |
+| GHSA-h64f-5h5j-jqjh / CVE-2026-44577 | Self-hosted Image Optimization API DoS via local images fetched into memory without size limits. Vercel-hosted deployments are not affected per advisory. | `next >=10.0.0 <15.5.16`, `>=16.0.0 <16.2.5` | 15.5.16 / 16.2.5; cumulative target 15.5.18 / 16.2.6 | Moderate | https://github.com/vercel/next.js/security/advisories/GHSA-h64f-5h5j-jqjh |
+| GHSA-wfc6-r584-vfw7 / CVE-2026-44576 | Cache poisoning in React Server Component responses when shared caches do not partition variants. | `next >=14.2.0 <15.5.16`, `>=16.0.0 <16.2.5` | 15.5.16 / 16.2.5; cumulative target 15.5.18 / 16.2.6 | Moderate | https://github.com/vercel/next.js/security/advisories/GHSA-wfc6-r584-vfw7 |
+| GHSA-vfv6-92ff-j949 / CVE-2026-44582 | Cache poisoning via `_rsc` cache-busting collisions. | `next >=13.4.6 <15.5.16`, `>=16.0.0 <16.2.5` | 15.5.16 / 16.2.5; cumulative target 15.5.18 / 16.2.6 | Low | https://github.com/vercel/next.js/security/advisories/GHSA-vfv6-92ff-j949 |
+| GHSA-3g8h-86w9-wvmq / CVE-2026-44572 | Middleware / Proxy redirects can be cache-poisoned through external `x-nextjs-data` header use. | `next >=12.2.0 <15.5.16`, `>=16.0.0 <16.2.5` | 15.5.16 / 16.2.5; cumulative target 15.5.18 / 16.2.6 | Low | https://github.com/vercel/next.js/security/advisories/GHSA-3g8h-86w9-wvmq |
+| Node.js June 18 2026 security release batch | Coordinated security releases for Node.js 22.x, 24.x, 26.x; dependency updates include llhttp 9.4.2, nghttp2 1.69.0, OpenSSL 3.5.7, and undici by line. | Node.js 22, 24, 26 supported release lines; EOL lines should be treated as affected when a security release occurs | 22.23.0, 24.17.0, 26.3.1 | Highest severity High | https://nodejs.org/en/blog/vulnerability/june-2026-security-releases |
+| CVE-2026-48933 | Node WebCrypto AES integer overflow leading to remote process abort / DoS when `subtle.encrypt()` input is a multiple of 2 GiB. | Node.js 22 / 24 / 26 | 22.23.0, 24.17.0, 26.3.1 | High | https://github.com/nodejs/node/releases/tag/v24.17.0 |
+| CVE-2026-48618 | Node TLS Unicode dot separator hostname normalization mismatch can lead to wildcard-depth authentication bypass. | Node.js 22 / 24 / 26 | 22.23.0, 24.17.0, 26.3.1 | High | https://github.com/nodejs/node/releases/tag/v24.17.0 |
+| CVE-2026-48615 | Proxy credentials leaked in `ERR_PROXY_TUNNEL` error message. | Node.js 22 / 24 / 26 | 22.23.0, 24.17.0, 26.3.1 | Medium | https://nodejs.org/en/blog/vulnerability/june-2026-security-releases |
+| CVE-2026-48619 | Unbounded memory growth in `node:http2` clients via attacker-controlled ORIGIN frames. | Node.js 22 / 24 / 26 | 22.23.0, 24.17.0, 26.3.1 | Medium | https://nodejs.org/en/blog/vulnerability/june-2026-security-releases |
+| CVE-2026-48937 | HTTP/2 sessions do not clean up after GOAWAY on invalid protocol errors. | Node.js 22 / 24 | 22.23.0, 24.17.0 | Medium | https://github.com/nodejs/node/releases/tag/v22.23.0 |
+| CVE-2026-48928 | Uppercase SNI context matching can lead to mTLS authorization bypass. | Node.js 22 / 24 / 26 | 22.23.0, 24.17.0, 26.3.1 | Medium | https://github.com/nodejs/node/releases/tag/v24.17.0 |
+| CVE-2026-48930 | Embedded-NUL hostnames can lead to silent authority rebinding due to C-string truncation in resolver bindings. | Node.js 22 / 24 / 26 | 22.23.0, 24.17.0, 26.3.1 | Medium | https://github.com/nodejs/node/releases/tag/v24.17.0 |
+| CVE-2026-48934 | TLS host identity verification bypass via session reuse with different servername. | Node.js 22 / 24 / 26 | 22.23.0, 24.17.0, 26.3.1 | Medium | https://github.com/nodejs/node/releases/tag/v24.17.0 |
+| CVE-2026-48617 | Permission Model bypass via `process.report.writeReport()` path misvalidation. | Node.js 22 / 24 / 26 | 22.23.0, 24.17.0, 26.3.1 | Low | https://nodejs.org/en/blog/vulnerability/june-2026-security-releases |
+| CVE-2026-48935 | Permission Model bypass via `FileHandle.utimes()` in promises API. | Node.js 22 / 24 / 26 | 22.23.0, 24.17.0, 26.3.1 | Low | https://nodejs.org/en/blog/vulnerability/june-2026-security-releases |
+| CVE-2026-48936 | Unix domain socket server bypasses `--permission` network restrictions; incomplete CVE-2026-21636 fix. | Node.js 26 only | 26.3.1 | Low | https://github.com/nodejs/node/releases/tag/v26.3.1 |
+| CVE-2026-48931 | HTTP response queue poisoning via TOCTOU race condition in `http.Agent`. | Node.js 22 / 24 / 26 | 22.23.0, 24.17.0, 26.3.1 | Low | https://nodejs.org/en/blog/vulnerability/june-2026-security-releases |
+| GHSA-8646-j5j9-6r62 / CVE-2026-33245 | React Router v7 unstable RSC redirect handling XSS via `javascript:` redirect targets. | `react-router >=7.7.0 <7.13.2` | 7.13.2 | High | https://github.com/remix-run/react-router/security/advisories/GHSA-8646-j5j9-6r62 |
+| GHSA-8x6r-g9mw-2r78 / CVE-2026-42342 | React Router Framework Mode / Remix DoS via unbounded path expansion in `__manifest` endpoint. | `react-router >=7.0.0 <7.15.0`; `@remix-run/server-runtime >=2.10.0 <2.17.5` | `react-router` 7.15.0; `@remix-run/server-runtime` 2.17.5 | High | https://github.com/remix-run/react-router/security/advisories/GHSA-8x6r-g9mw-2r78 |
+| GHSA-hm92-r4w5-c3mj / CVE-2026-6734 | undici `Socks5ProxyAgent` reuses a pool across origins, causing cross-origin request routing and possible credential/data leakage. | GitHub Advisory DB: `undici >=7.23.0 <7.28.0`, `>=8.0.0 <8.2.0`; NVD/OpenJS snippets seen during search mention 7.26.0 for 7.x, so triage should confirm current advisory state for the installed line. | GitHub Advisory DB: 7.28.0 / 8.2.0 | High | https://github.com/nodejs/undici/security/advisories/GHSA-hm92-r4w5-c3mj |
+| GHSA-72gw-mp4g-v24j / CVE-2026-5079 | multer DoS via deeply nested multipart field names. | `multer >=1.0.0 <2.2.0`; `>=3.0.0-alpha.1 <3.0.0-alpha.2` | 2.2.0 / 3.0.0-alpha.2 | High | https://github.com/expressjs/multer/security/advisories/GHSA-72gw-mp4g-v24j |
+| GHSA-v75r-vx73-82pj / CVE-2026-55849 | `@cyclonedx/cyclonedx-npm` shell injection through unsanitized `--workspace` argument when `npm_execpath` is unset/empty. | `@cyclonedx/cyclonedx-npm >=2.1.0 <5.0.0` | 5.0.0 | High | https://github.com/CycloneDX/cyclonedx-node-npm/security/advisories/GHSA-v75r-vx73-82pj |
+| GHSA-2vcc-5v34-9jc8 / CVE-2026-55661 | TinaCMS rich-text rendering stored XSS via unsanitized Slate link/image URLs. | `tinacms <3.9.3`; `@tinacms/mdx <2.1.7` | `tinacms` 3.9.3; `@tinacms/mdx` 2.1.7 | Moderate | https://github.com/tinacms/tinacms/security/advisories/GHSA-2vcc-5v34-9jc8 |
+| CVE-2026-55660 | TinaCMS `@tinacms/app` cross-origin postMessage handlers and rich-text URL-sanitization bypass enabling stored XSS / session takeover. | GitHub npm listing: `@tinacms/app`; detailed range not rendered in fetched listing. Vendor PR #7056 and release commit indicate `@tinacms/app` patch release 2.5.6. | 2.5.6 observed in TinaCMS version-package commit; confirm in impact triage. | High | https://github.com/advisories?query=ecosystem:npm |
+| CVE-2026-54074 / GHSA-4936-9hrh-qqpw | TinaCMS `@tinacms/cli` Forestry migration RCE through unsanitized `__TINA_INTERNAL__` marker in user-controlled YAML labels. | GitHub npm listing: `@tinacms/cli`; detailed range not rendered in fetched listing. Search found patched CLI version 2.4.3, but direct GHSA detail should be rechecked before remediation planning. | 2.4.3 reported by live search; confirm in impact triage. | High | https://github.com/advisories?query=ecosystem:npm |
+| GHSA-748x-3gxw-v7xv | Malware in `assert-kit`; any host with the package installed/running should be considered fully compromised. | `assert-kit >=0` | No patched version; remove, rotate secrets from a different host, rebuild environment if present. | Malware | https://github.com/advisories/GHSA-748x-3gxw-v7xv |
+| GHSA-96hv-2xvq-fx4p / CVE-2026-48779 | `ws` memory exhaustion DoS from high volume of tiny fragments/data chunks. Vercel Sandbox 3.2.2 bumped `ws` to address this. | `ws >=1.1.0 <5.2.5`, `>=6.0.0 <6.2.4`, `>=7.0.0 <7.5.11`, `>=8.0.0 <8.21.0` | 5.2.5 / 6.2.4 / 7.5.11 / 8.21.0 | High | https://github.com/websockets/ws/security/advisories/GHSA-96hv-2xvq-fx4p |
+| Vercel AI provider-utils hardening (VULN-11626 references in commit) | Vercel AI commit hardens download URL validation against SSRF hostname/redirect bypasses. | Vercel AI packages using `validateDownloadUrl`, `downloadBlob`, `download` server-side helpers; package version advisory not located in GitHub Advisory Database during this run. | Commit-level hardening merged 2026-06-11; impact triage should map package release versions if Cloude uses `ai` / `@ai-sdk/provider-utils`. | Not specified in commit | https://github.com/vercel/ai/commit/375fdd7eea4323454be663850202185c0df39d98 |
+| Vercel AI provider credential hardening (ANT-2026-FX163E39 reference in commit) | Vercel AI commit gates provider credentials so response-supplied URLs receive credentials only for same-origin requests. | Vercel AI provider integrations including Black Forest Labs, fal, Fireworks, Gladia, Google, Replicate paths shown in commit. | Commit-level hardening merged 2026-06-11; impact triage should map package release versions if Cloude uses Vercel AI SDK providers. | Not specified in commit | https://github.com/vercel/ai/commit/aeda37394a7250a1a0061bb83f658f482d7ea0db |
 
 ## Cloude 横断メモ
-- SkiresortWebPlan (root + Nanako/Sichinohe): next@16.2.4 - patch needed
-- primecarwash-site: next@16.2.4 - patch needed
-- WebTest: next@16.2.6 - OK
-- SPRAY apps/web: next@15.5.18 - OK
-- JAPOWSERCH: lodash High (tooling)
+- SkiresortWebPlan: workspace snapshot contains only `docs/` and `README.md`; target repo/package inventory is unavailable here. Because this project is monitored as a Next.js App Router target, prioritize checking `next`, React Server Components packages, Node runtime line, middleware/proxy auth, image optimization, WebSocket upgrade exposure, `ws`, `multer`, `undici`, and Vercel AI/TinaCMS usage in the downstream repo.
+- SPRAY: workspace snapshot does not include the SPRAY repo; stack hint says Web + CMS. Impact analyst should check any pnpm workspace `apps/*` for `next`, React Router/Remix, TinaCMS (`tinacms`, `@tinacms/app`, `@tinacms/cli`, `@tinacms/mdx`), upload handlers (`multer`), SBOM tooling (`@cyclonedx/cyclonedx-npm`), and Node/Vercel runtime pins.
+- JAPOWSERCH: repo unavailable in this workspace snapshot. Treat as unknown web/npm target until dependency inventory is loaded; specifically check for Node 22/24/26 runtime pins, `undici` direct dependency, WebSocket packages (`ws`), React Router, and npm malware package names from the GitHub npm listing.
+- WebTest: repo unavailable in this workspace snapshot. If it remains a Next.js test/deploy target, verify whether test fixtures pin vulnerable `next` 13-16 ranges or `react-server-dom-*`; also check security-audit workflows for Node 22/24/26 fixed releases.
+- POWDER: repo unavailable in this workspace snapshot. Treat as unknown web target; first-pass triage should locate `package.json`/lockfiles, determine Next.js/Node/Vercel deployment mode, and check for CMS/upload/WebSocket/SBOM tooling advisories above even if production exposure is unclear.
 
-intel complete -> next: vuln-impact-analyst
+## 次アクション
+→ vuln-impact-analyst
+
+intel complete → next: vuln-impact-analyst
