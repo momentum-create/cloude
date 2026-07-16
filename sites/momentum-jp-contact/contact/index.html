@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>設計相談｜MOMENTUM</title>
+  <meta name="description" content="ミニマルな住宅・店舗の設計相談。光・自然・余白で心地よい空間をつくります。" />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://momentum.jp/contact/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <main class="page">
+    <figure class="visual">
+      <!-- 公開前に images/hero.jpg へ差し替え推奨 -->
+      <img
+        src="../images/hero.svg"
+        alt="自然光の入るミニマルな室内のイメージ"
+        width="1600"
+        height="2000"
+      />
+      <figcaption>Residence / 光と余白</figcaption>
+    </figure>
+
+    <section class="panel">
+      <p class="brand">MOMENTUM</p>
+      <h1>設計相談</h1>
+      <p class="lead">
+        ミニマルを基軸に、光と自然を取り入れた空間をつくります。
+        まずは寸法・写真・ご要望だけで構いません。
+      </p>
+
+      <ul class="meta">
+        <li>対応：住宅 / 店舗 / 部分改修</li>
+        <li>エリア：応相談</li>
+        <li>返信：2〜3営業日以内</li>
+      </ul>
+
+      <!--
+        Formspree のフォームIDを入れ替えてください。
+        Googleフォームを使う場合は、この form を削除し iframe を設置してください。
+      -->
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <label>お名前
+          <input type="text" name="name" required autocomplete="name" />
+        </label>
+        <label>メールアドレス
+          <input type="email" name="email" required autocomplete="email" />
+        </label>
+        <label>案件タイプ
+          <select name="type" required>
+            <option value="">選択してください</option>
+            <option>住宅</option>
+            <option>店舗</option>
+            <option>部分改修</option>
+            <option>その他</option>
+          </select>
+        </label>
+        <label>エリア（都道府県）
+          <input type="text" name="area" placeholder="例：東京都" autocomplete="address-level1" />
+        </label>
+        <label>現状
+          <select name="status">
+            <option value="">選択してください（任意）</option>
+            <option>新築</option>
+            <option>リノベーション</option>
+            <option>部分改修</option>
+            <option>相談のみ</option>
+          </select>
+        </label>
+        <label>相談内容
+          <textarea name="message" required placeholder="現状、希望、気になっている点など"></textarea>
+        </label>
+        <button type="submit">送信する</button>
+        <p class="note">内容を確認のうえ、ご連絡します。営業メールには返信しません。</p>
+      </form>
+
+      <p class="foot">
+        <a href="https://x.com/momentum_design" target="_blank" rel="noopener noreferrer">@momentum_design</a>
+      </p>
+    </section>
+  </main>
+</body>
+</html>
