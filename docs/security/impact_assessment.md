@@ -85,5 +85,3 @@
 ## エスカレーション
 - Critical/High + AFFECTED: なし
 - `vuln-remediation-planner`: 今回は不要。Next.js 7/20 details または Node.js exact affected/fixed patch range が公開され、installed/deployed version と一致した場合のみ incident に切り替える。
-
-impact complete → incident: vuln-remediation-planner | monitor only

@@ -52,5 +52,3 @@
 - Next.js 7/20 scheduled release は公式ブログ上、CVE ID・affected exact ranges・fixed versions の詳細を「patch available 後に公開」としており、取得時点では詳細未公開。
 - Next.js blog index 取得時点では 7/13 予告記事が最新で、7/20 個別 advisory post は確認できず。
 - Critical/High は影響分析/incident 判断が必要な可能性のみ記録。パッチ適用・lockfile 更新は未実施。
-
-intel complete → next: vuln-impact-analyst
